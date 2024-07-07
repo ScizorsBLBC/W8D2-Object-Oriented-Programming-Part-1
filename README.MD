@@ -1,45 +1,27 @@
-# Assignment Handout: Designing and Implementing a Simple Bank Account Management System
+# Bank Account Management System
 
-## Objective:
-In this assignment, you will apply the Object-Oriented Programming (OOP) concepts learned in the lesson to design and implement a simple bank account management system. You will demonstrate your understanding of classes, objects, attributes, methods, encapsulation, and abstraction.
+This is a simple bank account management system implemented in Python using Object-Oriented Programming (OOP) principles. It allows you to create bank accounts, deposit money, withdraw money, check balances, and view account information.
 
-## Problem Statement:
-You are tasked with creating a basic bank account management system using OOP principles. The system should allow users to create bank accounts, perform transactions, and view account
-details.
+## Files
 
-## Requirements:
-### 1. Design a BankAccount class with the following attributes:
-- accountNumber (string): Unique identifier for the bank account
-- accountHolder (string): Name of the account holder
-- balance (float): Current balance of the account
-### 2. Implement the following methods within the BankAccount class:
-- __init__(self, accountNumber, accountHolder, initialBalance): Constructor to initialize the
-bank account with the provided account number, account holder name, and initial balance.
-- deposit(self, amount): Method to deposit a specified amount into the account and update the
-balance accordingly.
-- withdraw(self, amount): Method to withdraw a specified amount from the account and update
-the balance accordingly. If the withdrawal amount exceeds the current balance, display an error
-message.
-- getBalance(self): Method to retrieve and return the current balance of the account.
-- displayAccountInfo(self): Method to display the account number, account holder name, and
-current balance.
-### 3. Encapsulate the attributes of the BankAccount class by using appropriate access modifiers
-- (e.g., private or protected) to ensure data integrity and prevent direct access from outside the
-class.
-### 4. Create a main program that demonstrates the usage of the BankAccount class:
-- Instantiate multiple bank account objects with different account numbers, account holder
-names, and initial balances.
-- Perform deposit and withdrawal transactions on the bank account objects.
-- Display the account information and current balance of each bank account.
-### 5. Implement appropriate error handling and input validation:
-- Ensure that the deposit and withdrawal amounts are positive numbers.
-- Handle the case where the withdrawal amount exceeds the current balance by displaying an
-error message.
-### 6. Write clear and concise documentation for your code, including:
-- A brief description of the BankAccount class and its purpose
-- Explanation of each attribute and method within the class
-- Instructions on how to run the main program and interact with the bank account objects
-### 7. Test your implementation thoroughly to ensure that all the requirements are met and the program functions as expected.
+* `main.py`: The main program that runs the bank account system.
+* `classes.py`: Contains the `BankAccount` class that defines the structure and behavior of bank accounts.
+
+## How to Run
+
+1. Make sure you have Python 3 installed on your system.
+2. Open a terminal or command prompt.
+3. Navigate to the directory where the `main.py` and `classes.py` files are located.
+4. Run the program by typing `python3 main.py` (or `python main.py` if your default Python version is 3) and pressing Enter. (Your exact python command may differ if you are using Windows, Linux, or a different dev environment setup than I am on my Macbook.)
+
+## Interacting with Bank Accounts
+
+The program will create two bank accounts for Bob and Alice. You will see their initial account information. Then, the program will automatically perform some transactions (deposits and withdrawals) and show the updated information.
+
+## Additional Notes
+
+* The `BankAccount` class encapsulates the account details and provides methods for managing transactions.
+* The `main.py` file demonstrates how to create instances of the `BankAccount` class and use its methods.
 
 **Accreditation Notes:**
 

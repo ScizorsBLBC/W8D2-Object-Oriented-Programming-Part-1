@@ -1,14 +1,28 @@
-import BankAccount() from classes.py
+''' Main module to demonstrate bank account management. '''
 
-Bobs_Account = BankAccount("Bob",0.02, "Checking")
-try:
-    print(Bobs_Account.__account_balance)
-except AttributeError:
-    print("Cannot access private data.")
+from classes import BankAccount
 
-print(Bobs_Account._account_holder)
-print(Bobs_Account._account_number)
-print(Bobs_Account.__account_balance)
-# print(Bobs_Account.deposit(2.00))
-# print(Bobs_Account.get_balance())
-# print(Bobs_Account.withdraw(1000))
+def main():
+    ''' Creates and manages multiple bank account objects. '''
+
+    # Create two bank accounts
+    bobs_account = BankAccount("Bob", 1000.0, "123456789")
+    alice_account = BankAccount("Alice", 500.0, "987654321") 
+
+    # Display initial account information
+    print("Initial account information:")
+    print(bobs_account.display_account_info())
+    print(alice_account.display_account_info())
+
+    # Perform transactions
+    bobs_account.deposit(500.0)
+    alice_account.deposit(250.0)
+    bobs_account.withdraw(200.0)
+    alice_account.withdraw(100.0)
+    # Display updated account information
+    print("\nUpdated account information:")
+    print(bobs_account.display_account_info())
+    print(alice_account.display_account_info())
+    
+if __name__ == "__main__":
+    main()

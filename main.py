@@ -1,4 +1,10 @@
-''' Main module to demonstrate bank account management. '''
+'''
+    Main module to demonstrate bank account management.
+
+    This module creates two sample bank accounts (for Bob and Alice), performs
+    deposit and withdrawal transactions on them, and then displays both the initial
+    and updated account information.
+'''
 
 from classes import BankAccount
 
